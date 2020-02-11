@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Aline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="/package/css/swiper.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="conteiner">
+    <div class="text">
+      <h1>Te amo</h1>
+      <h2>❤</h2>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(./images/1.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/2.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/3.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/4.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/5.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/6.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/7.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/8.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/9.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/10.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/11.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/12.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/13.jpeg)"></div>
+      </div>
+      <!-- Add Pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+  </div>
+
+  <ul class="hearts">
+
+  </ul>
+
+  <iframe src="sonds/mercy.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+  </iframe> 
+
+  <!-- Swiper JS -->
+  <script src="../package/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
