@@ -30,6 +30,7 @@ body {
 .text {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 h1 {
