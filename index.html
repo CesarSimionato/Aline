@@ -5,14 +5,13 @@
   <title>Aline</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="/package/css/swiper.min.css">
 
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-  <!-- Swiper -->
+ 
   <div class="conteiner">
     <div>
       <a class="text" href="photo/index.html">
@@ -36,8 +35,7 @@
         <div class="swiper-slide" style="background-image:url(./images/12.jpeg)"></div>
         <div class="swiper-slide" style="background-image:url(./images/13.jpeg)"></div>
       </div>
-      <!-- Add Pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
+
     </div>
   </div>
 
@@ -45,13 +43,13 @@
 
   </ul>
 
-  <iframe src="sonds/mercy.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-  </iframe> 
+  <audio loop id="music1">
+    <source src="sonds/mercy.mp3" type="audio/mpeg">
+    Seu navegador não possui suporte ao elemento audio
+  </audio>
 
-  <!-- Swiper JS -->
   <script src="./package/js/swiper.min.js"></script>
 
-  <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
@@ -69,6 +67,11 @@
         el: '.swiper-pagination',
       },
     });
+  </script>
+
+  <script>
+    const music = document.querySelector('#music1');
+    music.play();
   </script>
 
   <script src="js/script.js"></script>

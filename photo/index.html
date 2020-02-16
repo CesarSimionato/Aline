@@ -12,6 +12,12 @@
 
 <body>
   <div id="scratch"></div>
+
+  <audio loop id="music2">
+    <source src="../sonds/Senorita.m4a" type="audio/mpeg">
+    Seu navegador não possui suporte ao elemento audio
+  </audio>
+
   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
     crossorigin="anonymous"></script>
   <script src="./js/wScratchPad.min.js"></script>
@@ -20,15 +26,19 @@
       size: 60,
       bg: 'img.jpeg',
       fg: '#000',
-      scratchMove: function (e, percent) { 
-      if(percent > 99.9){
-        window.location.href = "../heart/index.html"; 
+      scratchMove: function (e, percent) {
+        if (percent > 99.9) {
+          window.location.href = "../heart/index.html";
+        }
       }
-    }
     });
   </script>
-   <iframe src="../sonds/Senorita.m4a" allow="autoplay" style="display:none" id="iframeAudio">
-   </iframe> 
+
+  <script>
+    const music = document.querySelector('#music2');
+    music.play();
+  </script>
+
 </body>
 
 </html>

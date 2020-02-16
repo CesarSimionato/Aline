@@ -20,8 +20,15 @@
   <span></span>
  </div>
 
- <iframe src="../sonds/CantHaveYou.mp3" allow="autoplay" style="display:none" id="iframeAudio">
- </iframe> 
+ <audio loop id="music3">
+  <source src="../sonds/CantHaveYou.mp3" type="audio/mpeg">
+  Seu navegador não possui suporte ao elemento audio
+</audio>
+
+<script>
+  const music = document.querySelector('#music3');
+  music.play();
+</script>
 
 </body>
 </html>
